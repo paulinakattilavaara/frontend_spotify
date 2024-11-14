@@ -1,0 +1,76 @@
+.aboutDiv {
+  margin: 2rem;
+  width: 90%;
+  height: 90vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hamster {
+  height: 50%;
+  border-radius: 50%;
+  transition: transform 0.5s ease-out;
+}
+
+.hamster:hover {
+  transform: rotate(360deg);
+}
+
+.username {
+  margin: 2rem;
+  color: rgb(223, 22, 122);
+}
+
+.genre {
+  border: 1px solid rgb(185, 37, 62);
+  border-radius: 5px;
+  text-align: center;
+  padding: 0.4rem;
+  margin: 0.5rem;
+}
+
+.genreDiv {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  max-width: 50%;
+}
+
+.genre:hover {
+border: 1px dotted rgb(112, 24, 39);
+cursor: pointer;
+}
+
+.home_btn {
+  margin: 1rem;
+  padding: 0.8rem;
+  border-radius: 2.2rem;
+  font-size: 1.2rem;
+  position: absolute;
+  left: 3rem;
+  top: 3rem;
+  border: none;
+  background-color: #1abc54;
+  color: rgb(20, 20, 20);
+  transition: all 0.2s ease-in-out;
+  background: linear-gradient(#1abc54, #3e7c33b1);
+}
+
+.home_btn:hover {
+  transform: scale(1.1);
+}
+
+.homeLink {
+  color: rgb(20, 20, 20);
+}
+
+.factDiv {
+    text-align: center;
+}
+
+.genreHeader {
+    margin-top: 1.8rem;
+}

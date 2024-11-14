@@ -1,0 +1,89 @@
+.songDiv {
+  display: flex;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.songDiv:hover {
+  background-color: rgba(58, 57, 57, 0.425);
+  color: #1ed760
+}
+
+.trackIndex,
+.trackName,
+.trackArtist {
+  margin-left: 0.9rem;
+}
+
+.trackName {
+  font-size: 1.2rem;
+  letter-spacing: 0.02rem;
+}
+
+.trackArtist {
+  font-size: 1rem;
+}
+
+.trackIndex {
+  font-size: 0.9rem;
+}
+
+a {
+  margin-top: 0;
+}
+
+.playlistHeader {
+  padding: 2rem;
+  text-align: center;
+  font-size: 5rem;
+}
+
+.songButton {
+  margin-left: auto;
+  border-radius: 5rem;
+  padding: 0.7rem;
+  border: none;
+  color: #a7a5a5;
+  background-color: rgb(49, 49, 49);
+  font-size: 0.9rem;
+  transition: all .2s ease-in-out; 
+  background: linear-gradient(rgb(49, 49, 49), #1e1e1ec6);
+}
+
+.songButton:hover {
+  transform: scale(1.1); 
+}
+
+
+.home_btn {
+  margin: 1rem;
+  padding: 0.8rem;
+  border-radius: 2.2rem;
+  font-size: 1.2rem;
+  position: absolute;
+  left: 3rem;
+  top: 3rem;
+  border: none;
+  background-color: #1abc54;
+  color: rgb(20, 20, 20);
+  transition: all .2s ease-in-out; 
+  background: linear-gradient(#1abc54, #2e6325b1);
+}
+
+.home_btn:hover {
+  transform: scale(1.1); 
+}
+
+.innerSongDiv {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.username {
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: 1.2rem;
+  color: rgba(105, 105, 105, 0.466);
+  font-weight: 550;
+}
