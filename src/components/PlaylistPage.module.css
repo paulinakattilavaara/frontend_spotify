@@ -36,6 +36,14 @@ a {
   padding: 2rem;
   text-align: center;
   font-size: 5rem;
+  animation: none;
+  transition: all 0.5s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.playlistHeader:hover {
+  animation: dance2 1s linear infinite;
 }
 
 .songButton {
@@ -68,6 +76,7 @@ a {
   color: rgb(20, 20, 20);
   transition: all .2s ease-in-out; 
   background: linear-gradient(#1abc54, #2e6325b1);
+  z-index: 10;
 }
 
 .home_btn:hover {
@@ -86,4 +95,11 @@ a {
   font-size: 1.2rem;
   color: rgba(105, 105, 105, 0.466);
   font-weight: 550;
+}
+
+
+@keyframes dance2 {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
 }

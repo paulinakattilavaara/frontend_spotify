@@ -48,6 +48,15 @@
   transition: all .2s ease-in-out; 
 }
 
+.playlist_card .playlist_header {
+  animation: none;
+  transition: all 0.3s ease;
+}
+
+.playlist_card:hover .playlist_header {
+  animation: dance 1.2s linear infinite;
+}
+
 .playlist_card:hover {
   background-color: rgba(78, 75, 75, 0.3);
   transform: scale(1.1); 
@@ -63,6 +72,18 @@
   align-items: center;
   gap: 2.5rem;
 }
+
+
+
+
+@keyframes dance{
+  0%{transform: rotate(0)}
+  25%{transform: rotate(-5deg)}
+  50%{transform: rotate(0deg)}
+  75%{transform: rotate(5deg)}
+  100%{transform: rotate(0deg)}
+}
+
 
 @media (min-width: 1700px) {
   .playlist_card {
