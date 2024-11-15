@@ -25,11 +25,34 @@
 }
 
 .genre {
-  border: 1px solid rgb(185, 37, 62);
-  border-radius: 5px;
   text-align: center;
   padding: 0.4rem;
   margin: 0.5rem;
+  position: relative; 
+  overflow: hidden; 
+}
+
+.genre:hover {
+  cursor: pointer;
+}
+
+.genre::before {
+  content: ""; 
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  background: hsla(187, 40%, 13%, 0.94); 
+  transform: scaleX(0);
+  transform-origin: right; 
+  transition: transform 0.5s ease-in-out; 
+  z-index: -1; 
+}
+
+.genre:hover::before {
+  transform: scaleX(1); 
+  transform-origin: left; 
 }
 
 .genreDiv {
@@ -39,10 +62,6 @@
   max-width: 50%;
 }
 
-.genre:hover {
-border: 1px dotted rgb(112, 24, 39);
-cursor: pointer;
-}
 
 .home_btn {
   margin: 1rem;
